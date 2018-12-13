@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of pets -->
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardMaxElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#E0E0E0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/list_item_padding">
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/black"
+        tools:text="C - Balagurusamy" />
+
+
+    <TextView
+        android:id="@+id/label_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_name"
+        android:text="@string/label_price"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/display_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/label_price"
+        android:layout_below="@id/display_name"
+        android:layout_marginStart="@dimen/list_item_display_price_left_margin"
+        android:layout_toEndOf="@id/label_price"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:text="273" />
+
+    <TextView
+        android:id="@+id/for_single_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_price"
+        android:text="@string/price_for_single_item"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/display_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/label_quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/display_name"
+        android:layout_marginStart="@dimen/list_item_display_quantity_left_margin"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:text="120" />
+
+    <TextView
+        android:id="@+id/label_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_name"
+        android:layout_toStartOf="@id/display_quantity"
+        android:text="@string/label_quantity"
+        android:fontFamily="@font/architects_daughter"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sale_button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/display_quantity"
+        android:layout_marginTop="@dimen/sale_button_margin_top"
+        android:gravity="center"
+        android:fontFamily="@font/architects_daughter"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/button_sale"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:focusable="false"/>
+</RelativeLayout>
+</android.support.v7.widget.CardView>
